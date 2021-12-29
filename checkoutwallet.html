@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <link rel =  "shortcut icon" href = "Images/outlet.png">
+    <script src="https://kit.fontawesome.com/8d4c067090.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="headerx">
+        <div class = "containerx">
+            <div class="navbarx">
+                <div class="logo">
+                    <a href = "#"><img src = "images/outlet.png" width="125px"></a>
+                </div>
+                <div class="searchingx">
+                    <form class = "formx" id="form" role="search">
+                        <input class = "searchx" type="search" id="query" name="q"
+                        placeholder="Search..."
+                        aria-label="Search through site content">
+                        <button class = "buttonx">Search</button>
+                    </form>
+                </div>
+                <nav>
+                    <ul class = "ulx">
+                        <li><a href="Mainpage.html">Home Page</a></li>
+                        <li><a href="Marketplace.html">Marketplace</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Profile.html">Profile</a></li>
+                        <li><a href="Mainpage.html">Logout</a></li>
+                        <li><a href="Aboutus.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <!----------------Chackout ------------------->
+    <div class = "container" >
+        <h1>CHECKOUT</h1>
+    </div>
+    <div class = "container">        
+        <form novalidate class ="box-element shadow-lg p-3 m-5 bg-white rounded">
+            <h4 class = "mb-3">
+                Fill the required information
+            </h4>
+            <div class = "row g-3">
+                <div class = "col-sm-6">
+                    <label for = "firstName" class = "form-label">
+                        <i class="far fa-user"></i> First Name
+                    </label>
+                    <input id = "firstName" type = "text" class = "form-control" placeholder = "John" required >
+                    <div class = "invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class = "col-sm-6">
+                    <label for = "lastName" class = "form-label">
+                        <i class="far fa-user"></i> Last Name
+                    </label>
+                    <input id = "lastName" type = "text" class = "form-control" placeholder = "Smith" required >
+                    <div class = "invalid-feedback">
+                        Valid Last name is required.
+                    </div>
+                </div>
+            </div>
+            <br>        
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <label for = "username" class = "form-label">
+                        Username
+                    </label>
+                    <div class = "input-group">
+                        <span class = "input-group-text">@</span>
+                        <input id = "username" type = "text" class = "form-control" placeholder = "jsmith" required >
+                    </div>
+                    <div class = "invalid-feedback">
+                        Valid Username is required.
+                    </div>
+                </div>
+            </div>
+            <br>            
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <label for = "email" class = "form-label">
+                        <i class="far fa-envelope"></i> Email
+                    </label>
+                    <div class = "input-group">
+                        <input id = "email" type = "text" class = "form-control" required >
+                    </div>
+                    <div class = "invalid-feedback">
+                        Valid Email is required.
+                    </div>
+                </div>
+            </div>
+            <br>            
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <label for = "username" class = "form-label">
+                        <i class="fa fa-address-card-o"></i> Full Address
+                    </label>
+                    <div class = "input-group">
+                        <input id = "address" type = "text" class = "form-control" required >
+                    </div>
+                    <div class = "invalid-feedback">
+                        Valid Address is required.
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div style = "margin : 15px; " class = "column-md-6">
+                    <label for = "City" class = "form-label">
+                        <i class="far fa-flag"></i> Country
+                    </label>
+                    <select id = "Country" class = "form-control" required >
+                        <option value="">Choose..</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Italy">Italy</option>
+                        <option value="England">England</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value = "Austria">Austria</option>
+                    </select>
+                    <div class = "invalid-feedback">
+                        Valid Country is required
+                    </div>
+                </div>
+                <div style = "margin : 15px; " class = "column-md-6">
+                    <label for = "City" class = "form-label">
+                        <i class="fa fa-institution"></i> City
+                    </label>
+                    <select id = "Region" class = "form-control" required >
+                        <option value="">Choose..</option>
+                        <option value="New Cairo">New Cairo</option>
+                        <option value="Naser City">Naser City</option>
+                        <option value="Fifth Settlement">Fifth Settlement</option>
+                        <option value="Sheraton">Sheraton</option>
+                        <option value="Shoubra">Shoubra</option>
+                        <option value = "El Maadi">El Maadi</option>
+                    </select>
+                    <div class = "invalid-feedback">
+                        Valid City is required
+                    </div>
+                </div>
+                <div class = "col-md-5" style = "margin : 15px; ">
+                    <label for = "postcode" class = "form-label">
+                        Postcode
+                    </label>
+                    <input id = "postcode" type = "number" class = "form-control" placeholder = "1234" required >
+                    <div class = "invalid-feedback">
+                        Valid Username is required.
+                    </div>
+                </div>
+            </div>
+            <hr class = "my-4">
+            <h4 class = "mb-3">Payment</h4>
+            <div>
+                <h5 class = "mb-3">Your Current Balance : xxxx</h5>
+            </div>
+            <div>
+            <h5 class = "mb-3">Your Balance after placing the order : xxxx - x </h5>
+            </div>
+            <hr class = "my-4">
+            <button id="order" class = "btn btn-success btn-lg btn-block">Place Order</button>
+        </form>
+    </div>
+    <!----------------End of Chackout ------------------->
+
+    <div class="footerx">
+        <div class="containerx">
+            <div class="rowx">
+                    <div class="footer-col-1x">
+                        <h3>Download Our App</h3>
+                       <div class="app-logo">
+                        <img src="images/appgoogle.jpg">
+                       </div>
+                    </div>
+                    <div class="footer-col-2x">
+                       <img src="images/outlet.png">
+                       <p>Our Purpose Is to Make Worldwide Products Accessible to the Many. </p>
+                    </div>
+                    <div class="footer-col-3x">
+                        <h3>Useful Links</h3>
+                        <ul class = "ulx">
+                            <li>Shipping information</li>
+                            <li>Refund Policy</li>
+                            <li>Join Affiliate</li>
+                            <li>Help</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4x">
+                        <h3>Follow Us</h3>
+                        <ul class = "ulx">
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+            </div>
+            <hr><p class="copyrightx">Copyright 2021- Ecommerce Website ASU</p>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src=""></script>
+  </body>
+</html>
