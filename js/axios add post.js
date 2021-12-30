@@ -1,17 +1,24 @@
-const postBtn = document.getElementById('login');
+const postBtn = document.getElementById('createpost');
 
 const sendData = () => {
   
-  const emailValue = document.getElementById('mail').value
-  const passwordValue = document.getElementById('pass').value 
-  console.log(emailValue)
-  console.log(passwordValue)
+  const nameValue = document.getElementById('Name').value
+  const typeinput = document.getElementById('Brand').value
+  const descriptioninput = document.getElementById('Description').value 
+  const pricevalue = document.getElementById('price').value
+  console.log(nameValue)
+  console.log(typeinput)
+  console.log(descriptioninput)
+  console.log(pricevalue)
     axios
       .post(
-        'http://localhost:8000/api/login',
+        'https://the-outlet.herokuapp.com/api/products',
         {
-          email:emailValue,
-          password:passwordValue
+          name:nameValue,
+          type:typeinput,
+          description:descriptioninput,
+          price:pricevalue,
+          image:document.getElementById('imageinserted').value
           
         }
       )
@@ -23,10 +30,10 @@ const sendData = () => {
       });
   };
 
-const getProduct = () => {
+const getData = () => {
     axios
       .get(
-        'http://localhost:8000/api/all-products',
+        'https://the-outlet.herokuapp.com/api/products',
         {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -41,5 +48,5 @@ const getProduct = () => {
       });
 };
 
-  window.onload = getProduct
+  window.onload = getData
   postBtn.addEventListener('click', sendData);
