@@ -698,3 +698,9 @@ font-size: 14px ;
     margin-bottom: 10px;
     transition: transform 0.5s;
 }
+.buttonbuy {
+    display: center;
+    width: max-content;
+    background: black;
+    color:white;
+}

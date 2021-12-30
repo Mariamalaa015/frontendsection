@@ -42,7 +42,7 @@
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <button id="login" type = "button" class = "btn1 mt-3 mb-5">Login</button>
+                                <button onclick="location.href='Profile.html'" id="login" type = "button" class = "btn1 mt-3 mb-5">Login</button>
                             </div>
                         </div>
                         <a href = "Password_Change.html">Forgot Password</a>
@@ -52,34 +52,8 @@
             </div>
         </div>
     </section>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!--    <script type="text/javascript">
-
-        var user = '{{request.user}}'
-
-        function getToken(name)
-        {
-            var cookieValue = null;
-            if (document.cookie && document.cookie !=='')
-            {
-                var cookies = document.cookie.split(';');
-                for (var i = 0;i<cookies.length;i++)
-                {
-                    var cookie = cookies[i].trim();
-                    if (cookie.substring(0,name.length+1)===(name + '='))
-                    {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length +1));
-                        break;
-                    }
-                }
-            }
-            return cookieValue;
-        }
-        var csrftoken = getToken('csrftoken');
-    </script>
--->
-    <script src="jquery-3.6.0.min.js"></script>
+    
+    <!--<script src="jquery-3.6.0.min.js"></script> -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/axios-login js.js" defer></script>
   </body>

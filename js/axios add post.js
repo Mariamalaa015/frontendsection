@@ -8,7 +8,7 @@ const sendData = () => {
   console.log(passwordValue)
     axios
       .post(
-        'https://the-outlet.herokuapp.com/api/login',
+        'http://localhost:8000/api/login',
         {
           email:emailValue,
           password:passwordValue
@@ -17,8 +17,6 @@ const sendData = () => {
       )
       .then(response => {
         console.log(response);
-        localStorage.setItem("token",response.data.token)
-        window.location.href = "/"; 
       })
       .catch(err => {
         console.log(err, err.response);
@@ -28,7 +26,7 @@ const sendData = () => {
 const getProduct = () => {
     axios
       .get(
-        'https://the-outlet.herokuapp.com/api/login',
+        'http://localhost:8000/api/all-products',
         {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,

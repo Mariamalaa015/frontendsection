@@ -1,26 +1,23 @@
-const getBtn = documet.getElementById('submit');
 const postBtn = document.getElementById('submit');
 
 const getData = () => {
-    axios.get('backendurl',{headers={'Authorziation' : "token"}}
-    ).then(response => {
+    axios.get('backendurl',
+    {
+      'Authorization': `Bearer ${localStorage.getItem('token')}`,
+    }).then(response => {
     console.log(response);
-    //localStorage.setItem(access_token,"token");
   });
 };
 
 const sendData = () => {
+  const balancevalue = document.getElementById('wallet').value
+  console.log(balancevalue)
     axios
       .post(
         'backendurl',
         {
-          amount:$('#wallet')
+         balance:balancevalue
           
-        }
-        ,{
-          headers: {
-          'Authorization': localStorage.getitem(access_token),
-          }
         }
       )
       .then(response => {
@@ -30,6 +27,5 @@ const sendData = () => {
         console.log(err, err.response);
       });
   };
-  
-  getBtn.addEventListener('click', getData);
+  window.onload(getData);
   postBtn.addEventListener('click', sendData);
