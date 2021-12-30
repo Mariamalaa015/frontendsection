@@ -28,10 +28,10 @@ const sendData = () => {
 const getProduct = () => {
     axios
       .get(
-        'https://the-outlet.herokuapp.com/api/login',
+        'https://the-outlet.herokuapp.com/api/all-products',
         {
           headers: {
-            'Authorization': `Bearer ${localStorage.getItem('token')}`,
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
           }
         }
       )

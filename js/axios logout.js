@@ -1,7 +1,7 @@
 const gettokenvalue = () => {
     axios
       .get(
-        'https://the-outlet.herokuapp.com/api/all-products',
+        'https://the-outlet.herokuapp.com/api/profile',
         {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
