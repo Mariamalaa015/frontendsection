@@ -24,34 +24,30 @@
         <div class = "containerx">
             <div class="navbarx">
                 <div class="logo">
-                    <a href = "#"><img src = "images/outlet.png" width="125px"></a>
+                    <a href = "Mainpage.html"><img src = "images/outlet.png" width="125px"></a>
                 </div>
                 <div class="searchingx">
                     <form class = "formx" id="form" role="search">
                         <input class = "searchx" type="search" id="query" name="q"
                         placeholder="Search..."
                         aria-label="Search through site content">
-                        <button class = "buttonx"><a href = "Search.html" >Search</a></button>
+                        <button class = "buttonx">Search</button>
                     </form>
                 </div>
                 <nav>
-                    <ul class = "ulx">
-                        <li><a href="Mainpage.html">Home Page</a></li>
-                        <li><a href="Marketplace.html">Marketplace</a></li>
-                        <li><a href="Register.html">Register</a></li>
-                        <li><a href="Login.html">Login</a></li>
-                        <li><a href="Profile.html">Profile</a></li>
-                        <li><a href="Mainpage.html">Logout</a></li>
-                        <li><a href="Aboutus.html">About</a></li>
-                    </ul>
+                <ul class = "ulx">
+                    <li><a href="Mainpage.html">Home</a></li>
+                    <li><a href="category.html">Products</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Aboutus.html">About</a></li>
+                </ul>
                 </nav>
                 <a href = "cart.html"><img src="images/cart.png" width="30px" height="30px" ></a>
             </div>
         </div>
     </div>
-
-    
-    <div class = "container mb-5 my-3" style = "height : max">
+    <div class = "container" style = "height : 2600px">
         <div class="row align-items-center" style = "height : 500px">
             <div class="col" style = "height : 550px">
                 <div class = "boxa">
@@ -59,11 +55,12 @@
                         <img src = "Images/bag.jfif" alt = "1">
                         <div class = "overlaya">
                             <a href = "#" class = "view-btna" >View</a>
+                            <a href = "#" class = "view-btna" >Buy Now</a>
                         </div>
                     </div>
                     <div class = "detail-boxa">
                          <div class = "typea">
-                             <a href = "#" class = "aa">Bag</a>
+                             <a href = "" class = "aa">Bag</a>
                              <span class = "spana">Sold by <a href = "#">SellerName</a></span>
                          </div>   
                          <a href = "#" class = "pricea aa">1800 EGP</a>
@@ -80,8 +77,9 @@
                     </div>
                     <div class = "detail-boxa">
                          <div class = "typea">
-                             <a href = "#" class = "aa">Basic white shirt</a>
+                             <a href = "#" class = "aa" id="item">Basic white shirt</a>
                              <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                             <button onclick="location.href='checkoutviacredit.html'" id="buy" class="buttonbuy">Buy now</button>
                          </div>   
                          <a href = "#" class = "pricea aa">99 EGP</a>
                     </div>
@@ -93,6 +91,7 @@
                         <img src = "Images/yellowshirt.jpg" alt = "1">
                         <div class = "overlaya">
                             <a href = "#" class = "view-btna" >View</a>
+                            <a href = "#" class = "view-btna" >Buy Now</a>
                         </div>
                     </div>
                     <div class = "detail-boxa">
@@ -112,6 +111,7 @@
                         <img src = "Images/greypullover.jpeg" alt = "1">
                         <div class = "overlaya">
                             <a href = "#" class = "view-btna" >View</a>
+                            <a href = "#" class = "view-btna" >Buy Now</a>
                         </div>
                     </div>
                     <div class = "detail-boxa">
@@ -147,6 +147,7 @@
                         <img src = "Images/jacket.jpg" alt = "1">
                         <div class = "overlaya">
                             <a href = "#" class = "view-btna" >View</a>
+                            <a href = "#" class = "view-btna" >Buy Now</a>
                         </div>
                     </div>
                     <div class = "detail-boxa">
@@ -157,166 +158,182 @@
                          <a href = "#" class = "pricea aa">550 EGP</a>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="row align-items-center" style = "height : 500px">
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/mi.png" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
+            <div class="row align-items-center" style = "height : 500px">
+                <div class="col" style = "height : 550px">
+                    <div class = "boxa">
+                        <div class = "slide-imga">
+                            <img src = "Images/mi.png" alt = "1">
+                            <div class = "overlaya">
+                                <a href = "#" class = "view-btna" >View</a>
+                                <a href = "#" class = "view-btna" >Buy Now</a>
+                            </div>                        
                         </div>
-                    </div>
-                    <div class = "detail-boxa">
-                            <div class = "typea">
-                                <a href = "#" class = "aa">Mi Band 5</a>
-                                <span class = "spana">Sold by <a href = "#">SellerName</a></span>
-                            </div>   
-                            <a href = "#" class = "pricea aa">575 EGP</a>
+                        <div class = "detail-boxa">
+                             <div class = "typea">
+                                 <a href = "#" class = "aa">Mi Band 5</a>
+                                 <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                             </div>   
+                             <a href = "#" class = "pricea aa">575 EGP</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/coffeem.jfif" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
+            
+            
+                <div class="col" style = "height : 550px">
+                    <div class = "boxa">
+                        <div class = "slide-imga">
+                            <img src = "Images/coffeem.jfif" alt = "1">
+                            <div class = "overlaya">
+                                <a href = "#" class = "view-btna" >View</a>
+                                <a href = "#" class = "view-btna" >Buy Now</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class = "detail-boxa">
+                        <div class = "detail-boxa">
                             <div class = "typea">
                                 <a href = "#" class = "aa">Coffee Machine </a>
                                 <span class = "spana">Sold by <a href = "#">SellerName</a></span>
                             </div>   
-                            <a href = "#" class = "pricea aa">499 EGP</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/tv.jpg" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
+                             <a href = "#" class = "pricea aa">499 EGP</a>
                         </div>
                     </div>
-                    <div class = "detail-boxa">
-                            <div class = "typea">
-                                <a href = "#" class = "aa">Smart TV </a>
+                </div>
+            
+                    <div class="col" style = "height : 550px">
+                        <div class = "boxa">
+                            <div class = "slide-imga">
+                                <img src = "Images/tv.jpg" alt = "1">
+                                <div class = "overlaya">
+                                    <a href = "#" class = "view-btna" >View</a>
+                                    <a href = "#" class = "view-btna" >Buy Now</a>
+                                </div>
+                            </div>
+                            <div class = "detail-boxa">
+                                <div class = "typea">
+                                    <a href = "#" class = "aa">Smart TV </a>
+                                    <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                                </div>   
+                                <a href = "#" class = "pricea aa">7000 EGP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center" style = "height : 500px">
+                    <div class="col" style = "height : 550px">
+                        <div class = "boxa">
+                            <div class = "slide-imga">
+                                <img src = "Images/greypullover.jpeg" alt = "1">
+                                <div class = "overlaya">
+                                    <a href = "#" class = "view-btna" >View</a>
+                                    <a href = "#" class = "view-btna" >Buy Now</a>
+                                </div>
+                            </div>
+                            <div class = "detail-boxa">
+                                 <div class = "typea">
+                                    <a href = "#" class = "aa">Grey Pullover </a>
+                                    <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                                </div>   
+                                <a href = "#" class = "pricea aa">299 EGP</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col" style = "height : 550px">
+                        <div class = "boxa">
+                            <div class = "slide-imga">
+                                <img src = "Images/chair.jpg" alt = "1">
+                                <div class = "overlaya">
+                                    <a href = "#" class = "view-btna" >View</a>
+                                    <a href = "#" class = "view-btna" >Buy Now</a>
+                                </div>
+                            </div>
+                            <div class = "detail-boxa">
+                                <div class = "typea">
+                                    <a href = "#" class = "aa">Black Rotating Chair</a>
+                                    <span class = "spana">Sold by <a href = "#">SellerName</a></spn>
+                                </div>   
+                                <a href = "#" class = "pricea aa">800 EGP</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style = "height : 550px">
+                        <div class = "boxa">
+                            <div class = "slide-imga">
+                                <img src = "Images/flasha.png" alt = "1">
+                                <div class = "overlaya">
+                                    <a href = "#" class = "view-btna" >View</a>
+                                    <a href = "#" class = "view-btna" >Buy Now</a>
+                                </div>
+                            </div>
+                            <div class = "detail-boxa">
+                                <div class = "typea">
+                                    <a href = "#" class = "aa">Flash Drive</a>
+                                    <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                                </div>   
+                                <a href = "#" class = "pricea aa">150 EGP</a>
+                            </div>
+                        </div>
+                    </div>   
+            </div>
+            <div class="row align-items-center" style = "height : 500px">
+                <div class="col" style = "height : 550px">
+                    <div class = "boxa">
+                        <div class = "slide-imga">
+                            <img src = "Images/micro.jpg" alt = "1">
+                            <div class = "overlaya">
+                                <a href = "#" class = "view-btna" >View</a>
+                                <a href = "#" class = "view-btna" >Buy Now</a>
+                            </div>
+                        </div>
+                        <div class = "detail-boxa">
+                             <div class = "typea">
+                                <a href = "#" class = "aa">Microwave </a>
                                 <span class = "spana">Sold by <a href = "#">SellerName</a></span>
                             </div>   
-                            <a href = "#" class = "pricea aa">7000 EGP</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center" style = "height : 500px">
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/greypullover.jpeg" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
+                            <a href = "#" class = "pricea aa">1999 EGP</a>
                         </div>
                     </div>
-                    <div class = "detail-boxa">
-                            <div class = "typea">
-                                <a href = "#" class = "aa">Grey Pullover </a>
+                </div>
+            
+                <div class="col" style = "height : 550px">
+                    <div class = "boxa">
+                        <div class = "slide-imga">
+                            <img src = "Images/table.jpg" alt = "1">
+                            <div class = "overlaya">
+                                <a href = "#" class = "view-btna" >View</a>
+                                <a href = "#" class = "view-btna" >Buy Now</a>
+                            </div>
+                        </div>
+                        <div class = "detail-boxa">
+                             <div class = "typea">
+                                <a href = "#" class = "aa">Foldable Table</a>
                                 <span class = "spana">Sold by <a href = "#">SellerName</a></span>
                             </div>   
-                            <a href = "#" class = "pricea aa">299 EGP</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/chair.jpg" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
+                            <a href = "#" class = "pricea aa">500 EGP</a>
                         </div>
                     </div>
-                    <div class = "detail-boxa">
-                            <div class = "typea">
-                                <a href = "#" class = "aa">Black Rotating Chair</a>
+                </div>
+                <div class="col" style = "height : 550px">
+                    <div class = "boxa">
+                        <div class = "slide-imga">
+                            <img src = "Images/beanbag.png" alt = "1">
+                            <div class = "overlaya">
+                                <a href = "#" class = "view-btna" >View</a>
+                                <a href = "#" class = "view-btna" >Buy Now</a>
+                            </div>
+                        </div>
+                        <div class = "detail-boxa">
+                             <div class = "typea">
+                                <a href = "#" class = "aa">Waterproof Bean Bag chair</a>
                                 <span class = "spana">Sold by <a href = "#">SellerName</a></span>
-                            </div>   
-                            <a href = "#" class = "pricea aa">800 EGP</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/flasha.png" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
+                             </div>   
+                             <a href = "#" class = "pricea aa">650 EGP</a>
                         </div>
                     </div>
-                    <div class = "detail-boxa">
-                        <div class = "typea">
-                            <a href = "#" class = "aa">Flash Drive</a>
-                            <span class = "spana">Sold by <a href = "#">SellerName</a></span>
-                        </div>   
-                        <a href = "#" class = "pricea aa">150 EGP</a>
-                    </div>
-                </div>
-            </div>   
-        </div>
-        <div class="row align-items-center" style = "height : 500px">
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/micro.jpg" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
-                        </div>
-                    </div>
-                    <div class = "detail-boxa">
-                        <div class = "typea">
-                            <a href = "#" class = "aa">Microwave </a>
-                            <span class = "spana">Sold by <a href = "#">SellerName</a></span>
-                        </div>   
-                        <a href = "#" class = "pricea aa">1999 EGP</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/table.jpg" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
-                        </div>
-                    </div>
-                    <div class = "detail-boxa">
-                        <div class = "typea">
-                            <a href = "#" class = "aa">Foldable Table</a>
-                            <span class = "spana">Sold by <a href = "#">SellerName</a></span>
-                        </div>   
-                        <a href = "#" class = "pricea aa">500 EGP</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col" style = "height : 550px">
-                <div class = "boxa">
-                    <div class = "slide-imga">
-                        <img src = "Images/beanbag.png" alt = "1">
-                        <div class = "overlaya">
-                            <a href = "#" class = "view-btna" >View</a>
-                        </div>
-                    </div>
-                    <div class = "detail-boxa">
-                        <div class = "typea">
-                            <a href = "#" class = "aa">Waterproof Bean Bag chair</a>
-                            <span class = "spana">Sold by <a href = "#">SellerName</a></span>
-                        </div>   
-                        <a href = "#" class = "pricea aa">650 EGP</a>
-                    </div>
-                </div>
-            </div>
+                  </div>
+                  
+            
         </div>
     </div>
     <div class="footerx">
