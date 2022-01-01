@@ -12,7 +12,7 @@ const sendData = () => {
   console.log(pricevalue)
     axios
       .post(
-        'https://the-outlet.herokuapp.com/api/products',
+        'https://the-outlet.herokuapp.com/api/all-products',
         {
           name:nameValue,
           type:typeinput,
@@ -33,7 +33,7 @@ const sendData = () => {
 const getData = () => {
     axios
       .get(
-        'https://the-outlet.herokuapp.com/api/products',
+        'https://the-outlet.herokuapp.com/api/all-products',
         {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
