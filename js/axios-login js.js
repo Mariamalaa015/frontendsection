@@ -18,7 +18,7 @@ const sendData = () => {
       .then(response => {
         console.log(response);
         localStorage.setItem("token",response.data.token)
-        window.location.href = "/"; 
+        window.location.href = 'Profile.html'; 
       })
       .catch(err => {
         console.log(err, err.response);
@@ -44,4 +44,6 @@ const getProduct = () => {
 };
 
   window.onload = getProduct
+  //postBtn.addEventListener('click',getProduct);
+
   postBtn.addEventListener('click', sendData);
