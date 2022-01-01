@@ -1,5 +1,5 @@
 //const getBtn = documet.getElementById('register');
-const postBtn = document.getElementById('#register');
+const postBtn = document.getElementById('register');
 
 /*const getData = () => {
     axios.get('backendurl',{headers={'Authorziation' : "token"}}
@@ -15,6 +15,10 @@ const sendData = () => {
   const regionValue = document.getElementById('Region').value
   const emailValue = document.getElementById('mail').value 
   const passwordValue = document.getElementById('pass').value
+  var formData = new FormData()
+  var imagefile = document.querySelector('#pic')
+  formData.append("image", imagefile.files[0])
+  
   console.log(nameValue)
   console.log(usernameValue)
   console.log(regionValue)
@@ -22,17 +26,20 @@ const sendData = () => {
   console.log(passwordValue)
     axios
       .post(
-        'http://localhost:8000/api/register',
+        'https://the-outlet.herokuapp.com/api/register','upload_file',formData,
         {
           name:nameValue,
           username:usernameValue,
           region:regionValue,
           email:emailValue,
           password:passwordValue
-        }
-      )
+        },{
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+})
       .then(response => {
-        console.log(response);
+        console.log(response);window.location.href = "/"; 
       })
       .catch(err => {
         console.log(err, err.response);
