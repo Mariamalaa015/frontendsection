@@ -15,14 +15,17 @@ const sendData = () => {
   const regionValue = document.getElementById('Region').value
   const emailValue = document.getElementById('mail').value 
   const passwordValue = document.getElementById('pass').value
-  const Imageval = document.getElementById('pic').src 
-
+  const chooseFile = document.getElementById('pic')
+  const imgPreview = document.getElementById('col-lg-7')
+  chooseFile.addEventListener("change", function () {
+    getImgData();
+  })
   console.log(nameValue)
   console.log(usernameValue)
   console.log(regionValue)
   console.log(emailValue)
   console.log(passwordValue)
-  console.log(Imageval)
+  
     axios
       .post(
         'https://the-outlet.herokuapp.com/api/register',
@@ -31,21 +34,34 @@ const sendData = () => {
           username:usernameValue,
           region:regionValue,
           email:emailValue,
-          password:passwordValue,
-          //image.src = Imageval,
+          password:passwordValue
+
         },{
     headers: {
       'Content-Type': 'multipart/form-data'
     }
+    
 })
       .then(response => {
-        console.log(response)
-        ;window.location.href = 'Mainpage.html'; 
+        console.log(response);
+        window.location.href = "Mainpage.html"; 
       })
       .catch(err => {
         console.log(err, err.response);
       });
   };
   
+  function getImgData() {
+    const files = chooseFile.files[0];
+    if (files) {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(files);
+      fileReader.addEventListener("load", function () {
+        imgPreview.style.display = "block";
+        imgPreview.innerHTML = '<img src="' + this.result + '" />';
+      });    
+    }
+  }
   //getBtn.addEventListener('click', getData);
   postBtn.addEventListener('click', sendData);
+  

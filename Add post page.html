@@ -37,8 +37,8 @@
                     <ul class = "ulx">
                         <li><a href="Mainpage.html">Home Page</a></li>
                         <li><a href="Marketplace.html">Marketplace</a></li>
-                        <li><a href="Register.html">Register</a></li>
-                        <li><a href="Login.html">Login</a></li>
+                        
+                        
                         <li><a href="Profile.html">Profile</a></li>
                         <li><a href="Mainpage.html">Logout</a></li>
                         <li><a href="Aboutus.html">About</a></li>
@@ -52,36 +52,36 @@
     <div class = "container my-3">
         <h2 class = "page-title">Add a new post</h2>
         <div class = "container my-4">
-            <form action = "Add post page.html" method = "post">
+            <form>
                 <div class = "row my-3 mx-1">
                     <label class=" form-label">Product Name</label>
-                    <input id = "Name" type = "text" name = "ProductName" class = "text-input form-control">
+                    <input id = "Name" class = "text-input form-control">
                     <br>
                 </div>
                 <div>
-                    <label class=" form-label">Product Description</label>
-                    <teaxtarea name = "Description" id = "Description"></teaxtarea>
+                    <label class=" form-label">Description</label>
+                    <input id = "des"  class = "text-input form-control">
                     <br>
                 </div>
                 <div class = "row my-3">
                     <div class = "col">
                         <label class=" form-label">Price</label>
-                        <input id = "price" type = "text" name = "ProductName" class = "text-input form-control">
+                        <input id = "price"   class = "text-input form-control">
                     </div>
                     <div class = "col">
-                        <label class=" form-label">Brand</label>
-                        <input id = "Brand" type = "text" name = "ProductName" class = "text-input form-control">
+                        <label class=" form-label">Type</label>
+                        <input id = "type" class = "text-input form-control">
                     </div>
                     <br>
                 </div>
-                <div class = "row my-3">
-                    <div class = "col">
+               <div class = "row my-3">
+                  <!-- <div class = "col">
                         <label class=" form-label">Product Image</label>
-                        <input id="imageinserted" class = "file-upload-input" type = "file" accept = "image/*">
+                        <input name="image" id="imageinserted" class = "file-upload-input" type = "file" accept = "image/*">
                     </div>
-                    <br>
+                    <br>-->
                     <div class = "col">
-                        <a  id="createpost" href="/" class="btnx my-2">Create Post</a><br>
+                        <button  id="createpost" class="btnx my-2">Create Post</button><br>
                     </div>
                 </div>
             </form>
@@ -130,6 +130,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/axios add post.js"></script>
-    <script src="js/Addpost.js"></script>
 </body>
 </html>

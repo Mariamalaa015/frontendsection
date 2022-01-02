@@ -1,20 +1,19 @@
-const gettokenvalue = () => {
-    axios
-      .get(
-        'https://the-outlet.herokuapp.com/api/profile',
-        {
-          headers: {
-            'Authorization': `Bearer ${localStorage.getItem('token')}`,
-          }
+const destroytoken = () => {
+  axios
+    .post(
+      'https://the-outlet.herokuapp.com/api/login',
+      {
+        headers: {
+          'Authorization': `Bearer ${localStorage.clear()}`,
+          
         }
-      )
-      .then(response => {
-        console.log(response.data)
-      })
-      .catch(err => {
-        console.log(err, err.response);
-      });
+      }
+    )
+    .then(response => {
+      console.log(response.data)
+      window.location.href='Mainpage.html'
+    })
+    .catch(err => {
+      console.log(err, err.response);
+    });
 };
-
-  window.onload = gettokenvalue
-  

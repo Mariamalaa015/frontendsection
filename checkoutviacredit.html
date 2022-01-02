@@ -37,8 +37,7 @@
                     <ul class = "ulx">
                         <li><a href="Mainpage.html">Home Page</a></li>
                         <li><a href="Marketplace.html">Marketplace</a></li>
-                        <li><a href="Register.html">Register</a></li>
-                        <li><a href="Login.html">Login</a></li>
+                        
                         <li><a href="Profile.html">Profile</a></li>
                         <li><a href="Mainpage.html">Logout</a></li>
                         <li><a href="Aboutus.html">About</a></li>
@@ -53,7 +52,7 @@
         <h1>CHECKOUT</h1>
     </div>
     <div class = "container">        
-        <form novalidate class ="box-element shadow-lg p-3 m-5 bg-white rounded">
+        <form  class ="box-element shadow-lg p-3 m-5 bg-white rounded">
             <h4 class = "mb-3">
                 Fill the required information
             </h4>
@@ -121,35 +120,16 @@
                 </div>
             </div>
             <div class = "row">
-                <div style = "margin : 15px; " class = "column-md-6">
-                    <label for = "City" class = "form-label">
-                        <i class="far fa-flag"></i> Country
-                    </label>
-                    <select id = "country" class = "form-control" required >
-                        <option value="">Choose..</option>
-                        <option value="Egypt">Egypt</option>
-                        <option value="Italy">Italy</option>
-                        <option value="England">England</option>
-                        <option value="Germany">Germany</option>
-                        <option value="France">France</option>
-                        <option value = "Austria">Austria</option>
-                    </select>
-                    <div class = "invalid-feedback">
-                        Valid Country is required
-                    </div>
-                </div>
+              
                 <div style = "margin : 15px; " class = "column-md-6">
                     <label for = "City" class = "form-label">
                         <i class="fa fa-institution"></i> City
                     </label>
                     <select id = "region" class = "form-control" required >
                         <option value="">Choose..</option>
-                        <option value="New Cairo">New Cairo</option>
-                        <option value="Naser City">Naser City</option>
-                        <option value="Fifth Settlement">Fifth Settlement</option>
-                        <option value="Sheraton">Sheraton</option>
-                        <option value="Shoubra">Shoubra</option>
-                        <option value = "El Maadi">El Maadi</option>
+                        <option value="New Cairo">cairo</option>
+                        <option value="Naser City">giza</option>
+                      
                     </select>
                     <div class = "invalid-feedback">
                         Valid City is required
@@ -171,9 +151,9 @@
                 <label for="fname">Accepted Cards</label>
                 <div class="icon-container">  
                     <i class="fa fa-cc-visa" style="color:navy;"></i>
-                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  
                     <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    
                     <br>
                 </div>
             </div>
@@ -244,7 +224,7 @@
                 <br>
             </div>
             <hr class = "my-4">
-            <button  onclick="location.href='Mainpage.html'" class = "btn btn-success btn-lg btn-block">Place Order</button>
+            <button  onclick="window.location.href='Marketplace.html';" class = "btn btn-success btn-lg btn-block">Place Order</button>
         </form>
     </div>
     <div class="footerx">
@@ -288,7 +268,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/axios checkout.js"></script>
+   
   </body>
 </html>
