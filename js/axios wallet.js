@@ -1,31 +1,25 @@
-const postBtn = document.getElementById('submit');
+const gettokenvalue = () => {
+  //const namevalue=document.getElementById('name')
 
-const getData = () => {
-    axios.get('backendurl',
-    {
-      'Authorization': `Bearer ${localStorage.getItem('token')}`,
-    }).then(response => {
-    console.log(response);
-  });
-};
-
-const sendData = () => {
-  const balancevalue = document.getElementById('wallet').value
-  console.log(balancevalue)
     axios
-      .post(
-        'backendurl',
+      .get(
+        'https://the-outlet.herokuapp.com/api/profile',
         {
-         balance:balancevalue
-          
+          headers: {
+            'Authorization': `Bearer ${localStorage.getItem('token')}`,
+          }
         }
       )
       .then(response => {
-        console.log(response);
+        console.log(response.data)
+        //const v= response.data(user => {return ` ${user.name} `})
+       document.getElementById('balance').innerHTML=response.data.user.balance
+       
       })
       .catch(err => {
         console.log(err, err.response);
       });
-  };
-  window.onload(getData);
-  postBtn.addEventListener('click', sendData);
+};
+
+  window.onload = gettokenvalue
+  

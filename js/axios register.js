@@ -15,10 +15,7 @@ const sendData = () => {
   const regionValue = document.getElementById('Region').value
   const emailValue = document.getElementById('mail').value 
   const passwordValue = document.getElementById('pass').value
-  var formData = new FormData()
-  var imagefile = document.querySelector('#pic')
-  formData.append("image", imagefile.files[0])
-  
+
   console.log(nameValue)
   console.log(usernameValue)
   console.log(regionValue)
@@ -26,7 +23,7 @@ const sendData = () => {
   console.log(passwordValue)
     axios
       .post(
-        'https://the-outlet.herokuapp.com/api/register','upload_file',formData,
+        'https://the-outlet.herokuapp.com/api/register',
         {
           name:nameValue,
           username:usernameValue,
@@ -39,7 +36,8 @@ const sendData = () => {
     }
 })
       .then(response => {
-        console.log(response);window.location.href = "/"; 
+        console.log(response)
+        ;window.location.href = 'Mainpage.html'; 
       })
       .catch(err => {
         console.log(err, err.response);

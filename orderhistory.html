@@ -59,18 +59,18 @@
                 <div class = "container">
                     <div class = "row rowl no-gutters">
                         <div class="rowx">
-                        <h4>Order #123</h4>
+                        <h4 id="ordernumber">Order #</h4>
                         </div>
                         <img class="orderhx-img" style="position: relative;" src="Images/chair.jpg" >
                         <div class="col-2x">
                             <div class="rowx">
-                        <label for="item"  style="color: black;text-align: center;font-size: 16px;">Rotating chair</label>
+                        <label id="product" for="item"  style="color: black;text-align: center;font-size: 16px;"></label>
                             </div>
                             <div class="rowx">
-                        <p class="catx" style="color: black;font-size: 14px;">Quantity: 1</p>
+                        <p id="type" class="catx" style="color: black;font-size: 14px;">Type: </p>
                         </div>
-                        <p class="catx"style="color: black;font-size: 14px;">Price: 600</p>
-                        <p class="catx" style="color: black;font-size: 14px;">Date: <span id="datetime">17-11-2021</span></p>
+                        <p id="price" class="catx"style="color: black;font-size: 14px;">Price: </p>
+                        
                             <div class="small-containerx">
                                 <div style="text-align: center; ">
                                 <a class="btnx" href="checkout.html">Buy again</a>
@@ -84,7 +84,7 @@
               </div>
             </div>   
             </section>
-
+<!--
             <section  class = "Form mt-5 pt-4 my-4 mx-5" style="margin: auto;">
                 <div class = "container">
                     <div class = "row rowl no-gutters">
@@ -113,7 +113,8 @@
                   </div>
               </div>
             </div>   
-            </section>
+            </section> 
+        
            
                <section  class = "Form mt-5 pt-4 my-4 mx-5" style="margin: auto;">
                 <div class = "container">
@@ -144,7 +145,7 @@
               </div>
             </div>   
             </section>
-        
+        -->
     </div>
     <div class="brandsx">
         <div class="small-containerx">
@@ -199,5 +200,7 @@
             <hr><p class="copyrightx">Copyright 2021- Ecommerce Website ASU</p>
         </div>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/axios order history.js" ></script>
 </body>
 </html>
