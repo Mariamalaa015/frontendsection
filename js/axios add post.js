@@ -1,52 +1,52 @@
 const postBtn = document.getElementById('createpost');
 
+const getData = () => {
+    axios.get('backendurl',
+    {
+      'Authorization': `Bearer ${localStorage.getItem('token')}`,
+    }).then(response => {
+    console.log(response);
+  });
+};
+
+
 const sendData = () => {
+  const ProductName = document.getElementById('Name').value
+  const Description = document.getElementById('Description').value 
+  const PriceValue = document.getElementById('price').value
+  const TypeValue = document.getElementById('type').value
+  const BrandName = document.getElementById('Brand').value 
+  //const passwordValue = document.getElementById('imageinserted').value
+  //var formData = new FormData()
+  //var imagefile = document.querySelector('#pic')
+  //formData.append("image", imagefile.files[0])
   
-  const nameValue = document.getElementById('Name').value
-  const typeinput = document.getElementById('Brand').value
-  const descriptioninput = document.getElementById('Description').value 
-  const pricevalue = document.getElementById('price').value
-  console.log(nameValue)
-  console.log(typeinput)
-  console.log(descriptioninput)
-  console.log(pricevalue)
+  console.log(ProductName)
+  console.log(Description)
+  console.log(PriceValue)
+  console.log(TypeValue)
+  console.log(BrandName)
     axios
       .post(
-        'https://the-outlet.herokuapp.com/api/all-products',
+        'Backenurl',/*'upload_file',formData,*/
         {
-          name:nameValue,
-          type:typeinput,
-          description:descriptioninput,
-          price:pricevalue,
-          image:document.getElementById('imageinserted').value
-          
-        }
-      )
+          name :ProductName,
+          type :TypeValue,
+          description : Description,
+          price :PriceValue,
+        },{
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+})
       .then(response => {
-        console.log(response);
+        console.log(response);window.location.href = "/"; 
       })
       .catch(err => {
         console.log(err, err.response);
       });
   };
-
-const getData = () => {
-    axios
-      .get(
-        'https://the-outlet.herokuapp.com/api/all-products',
-        {
-          headers: {
-            'Authorization': `Bearer ${localStorage.getItem('token')}`,
-          }
-        }
-      )
-      .then(response => {
-        console.log(response.data)
-      })
-      .catch(err => {
-        console.log(err, err.response);
-      });
-};
-
-  window.onload = getData
+  
+  //getBtn.addEventListener('click', getData);
   postBtn.addEventListener('click', sendData);
+ // window.onload = getData
