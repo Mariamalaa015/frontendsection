@@ -16,8 +16,7 @@ const gettokenvalue = () => {
        document.getElementById('name').innerHTML=response.data.user.name
        document.getElementById('email').innerHTML=response.data.user.email
        document.getElementById('region').innerHTML=response.data.user.region
-       document.getElementById('profileimage').innerHTML=response.data.user.image
-       //FileDownload(response.data.user.image,'profileimage')
+       document.getElementById('profileimage').src=response.data.user.image
       })
       .catch(err => {
         console.log(err, err.response);

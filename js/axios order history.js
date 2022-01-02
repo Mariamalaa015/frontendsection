@@ -16,6 +16,7 @@ const gettokenvalue = () => {
          document.getElementById('product').innerHTML= response.data.purchased[0].name
          document.getElementById('type').innerHTML="Type: " + response.data.purchased[0].type
          document.getElementById('price').innerHTML="Price: " + response.data.purchased[0].price
+         document.getElementById('orderimage').src=response.data.purchased[0].image
          
         })
         .catch(err => {
